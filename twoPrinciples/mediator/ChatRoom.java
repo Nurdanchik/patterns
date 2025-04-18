@@ -3,7 +3,7 @@ package twoPrinciples.mediator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChatRoom implements ChatRoom.ChatMediator {
+public class ChatRoom implements ChatMediator {
     private List<User> users = new ArrayList<>();
 
     @Override
@@ -18,10 +18,5 @@ public class ChatRoom implements ChatRoom.ChatMediator {
     @Override
     public void addUser(User user) {
         users.add(user);
-    }
-
-    public static interface ChatMediator {
-        void sendMessage(String message, User sender);
-        void addUser(User user);
     }
 }

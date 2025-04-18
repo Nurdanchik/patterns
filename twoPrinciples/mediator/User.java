@@ -1,10 +1,10 @@
 package twoPrinciples.mediator;
 
 public abstract class User {
-    protected ChatRoom.ChatMediator mediator;
+    protected ChatMediator mediator;
     protected String name;
 
-    public User(ChatRoom.ChatMediator mediator, String name) {
+    public User(ChatMediator mediator, String name) {
         this.mediator = mediator;
         this.name = name;
     }
